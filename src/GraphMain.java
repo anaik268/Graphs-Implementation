@@ -1,7 +1,14 @@
+import java.io.IOException;
+import java.util.Scanner;
 
 public class GraphMain {
-	public static void main(String[] args) {
-		System.out.println("This program will be used for graphs, DFS, and BFS");
-	}
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter graph input file name: ");
+		String file = sc.nextLine();
+		Graph graph = new Graph(file);
+		graph.print();
 
+	}
 }
